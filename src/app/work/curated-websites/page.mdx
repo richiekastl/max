@@ -1,0 +1,131 @@
+import logo from '@/images/clients/outerbox/logomark-dark.svg'
+import imageHero from './hero.png'
+import Image from 'next/image'
+import imageFeature1 from './feature-1.png'
+import imageFeature1a from './feature-1a.png'
+import imageFeature1b from './feature-1b.png'
+import imageFeature2 from './feature-2.png'
+import imageFeature2a from './feature-2a.png'
+import imageFeature2b from './feature-2b.png'
+import imageFeature3 from './feature-3.png'
+import imageFeature3a from './feature-3a.png'
+import imageFeature3b from './feature-3b.png'
+import imageFeature4 from './feature-4.png'
+import imageFeature4a from './feature-4a.png'
+import imageFeature4b from './feature-4b.png'
+import imageFeature5 from './feature-5.png'
+import imageFeature5a from './feature-5a.png'
+import imageFeature5b from './feature-5b.png'
+
+export const caseStudy = {
+  client: 'Senior UI/UX Designer @ OuterBox',
+  title: 'Curated UI Design Showcase from highlighted Client Projects.',
+  description:
+    'In an effort to show off some of my user interface (UI) skills outside of my UX projects, I decided to create this gallery to showcase some designs from actual client projects.',
+  summary: [
+    'At OuterBox, I was able to work on hundreds of projects spanning numerous industries. Our main purpose was to deliver high-performing B2C, B2B SEO-driven websites to help drive revenues and conversions for our clients.',
+    'In an effort to show off some of my user interface (UI) skills outside of my UX projects, I decided to create this gallery to showcase some designs from actual client projects.',
+    
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2021-09',
+  service: 'Conversion Design',
+  testimonial: {
+    author: { name: 'Devon', role: 'Senior Writer at OuterBox' },
+    content:
+      'Max is a very talented designer. He has no problem elevating a concept whether it be a template design or the overall theme of a website. He always delivers innovative executions that exceed client expectations.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Project Overview
+
+OuterBox is a marketing & advertising agency that focuses on lead generation strategies to help boost ecommmerce sales and conversions. Here, we designed and developed numerous websites ranging from article posts to fully custom applications. Pairing with custom SEO and CRO strategies, we were able to implement solutions to increase revenues and conversions for our clients in a wide range of industries, spanning from eCommerce to Healthcare to Enterprise-level corporations. Not one solution was a one-size fits all, so each project had its own challenges. Unfortunately, I cannot share all of the projects I've worked on, so instead I picked out my favorite to showcase my creativity and versatility. 
+
+<TagList className="mb-40">
+  <TagListItem>UI Design</TagListItem>
+  <TagListItem>Interaction Design</TagListItem>
+  <TagListItem>SEO Design</TagListItem>
+  <TagListItem>Adobe Xd</TagListItem>
+  <TagListItem>Ecommerce</TagListItem>
+</TagList>
+
+## Freeway Corporation Full Website Redesign
+
+Freeway Corporation maintains an inventory over 10,000 ready-to-use tools, to insure the fastest possible delivery on any washer order. They also produce and manufacture washers and other stamping in-house. For this project, I worked directly with the Vice President of Sales to achieve their vision of a future-proof website. Their old website was very dated and the goal was to provide a design that was up to standards and vividly creative for such a "boring" industry.
+
+<Image
+  src={imageFeature1}
+  alt="some description"
+  className="xl:!min-w-[76rem] !w-full !mt-20"
+/>
+
+<div className="lg:!w-full xl:!min-w-[76rem] xl:!columns-2 lg:!columns-1 sm:!columns-1 gap-10 xs:!mt-0 xl:!mt-10 !mb-40">
+  <Image className="!w-full mt-10 xl:mt-0" src={imageFeature1a}/>
+  <Image className="!w-full mt-10 xl:mt-0" src={imageFeature1b}/>
+</div>
+
+## Americhem Full Website Redesign
+
+Americhem is a globally recognized designer and manufacturer of custom color masterbatch, functional additives, engineered compounds and performance technologies. Their project was a huge undertaking - their site launched with over 100+ pages. They had an outdated site and started this project with us due to our process and how easy we made it for them to manage their content. As you can see from the designs, they wanted to introduce a ton of color, and show the world that they are the experts in the additives field.
+
+<Image
+  src={imageFeature2}
+  alt="some description"
+  className="xl:!min-w-[76rem] !w-full !mt-20"
+/>
+
+<div className="lg:!w-full xl:!min-w-[76rem] xl:!columns-2 lg:!columns-1 sm:!columns-1 gap-10 xs:!mt-0 xl:!mt-10 !mb-40">
+  <Image className="!w-full mt-10 xl:mt-0" src={imageFeature2a}/>
+  <Image className="!w-full mt-10 xl:mt-0" src={imageFeature2b}/>
+</div>
+
+## ArmorVax Website Launch
+
+At the height of COVID, RB Sigma launched ArmorVax to help bring efficiency and accuracy to the immunization process for both consumers and medical providers. Consumers can download the immunization app, locate a vaccine provider and schedule their immunization at a time that is most convenient for them. ArmorVax was one of many projects we worked together to inception to launch.
+
+<Image
+  src={imageFeature3}
+  alt="some description"
+  className="xl:!min-w-[76rem] !w-full !mt-20"
+/>
+
+<div className="lg:!w-full xl:!min-w-[76rem] xl:!columns-2 lg:!columns-1 sm:!columns-1 gap-10 xs:!mt-0 xl:!mt-10 !mb-40">
+  <Image className="!w-full mt-10 xl:mt-0" src={imageFeature3a}/>
+  <Image className="!w-full mt-10 xl:mt-0" src={imageFeature3b}/>
+</div>
+
+## MyShower Door Full Website Redesign
+
+MY Shower Door is a family business with nine Florida frameless shower door showrooms. Each store is outfitted with full sized, fully operational frameless shower door displays. Here, I lead the design direction from project kickoff to final design approvals that led into development.
+
+<Image
+  src={imageFeature4}
+  alt="some description"
+  className="xl:!min-w-[76rem] !w-full !mt-20"
+/>
+
+<div className="lg:!w-full xl:!min-w-[76rem] xl:!columns-2 lg:!columns-1 sm:!columns-1 gap-10 xs:!mt-0 xl:!mt-10 !mb-40">
+  <Image className="!w-full mt-10 xl:mt-0" src={imageFeature4a}/>
+  <Image className="!w-full mt-10 xl:mt-0" src={imageFeature4b}/>
+</div>
+
+## Supreme Lending Dallas Branding and Full Website Redesign
+
+Supreme Lending Dallas is a mortgage originator, being able to underwrite, close, and fund loans. It is their goal to build customers for life by helping homebuyers achieve their dreams. While our goal at OuterBox was to provide Supreme Lending with a brand new website that they and their clients would enjoy. This project encompassed a complete overhaul using their new branding to match their culture and expanding team.
+
+<Image
+  src={imageFeature5}
+  alt="some description"
+  className="xl:!min-w-[76rem] !w-full !mt-20"
+/>
+
+<div className="lg:!w-full xl:!min-w-[76rem] xl:!columns-2 lg:!columns-1 sm:!columns-1 gap-10 xs:!mt-0 xl:!mt-10 !mb-40">
+  <Image className="!w-full mt-10 xl:mt-0" src={imageFeature5a}/>
+  <Image className="!w-full mt-10 xl:mt-0" src={imageFeature5b}/>
+</div>

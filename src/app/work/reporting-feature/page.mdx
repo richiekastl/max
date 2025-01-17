@@ -1,0 +1,109 @@
+import logo from '@/images/clients/binary-defense/logomark-dark.svg'
+import imageHero from './hero.png'
+import Image from 'next/image'
+import imageFeature1 from './feature-1.png'
+import imageFeature1a from './feature-1a.png'
+import imageFeature1b from './feature-1b.png'
+import imageShowcase from './showcase.png'
+import imageFeature2 from './feature-2.png'
+import imageFeature2a from './feature-2a.png'
+import imageFeature2b from './feature-2b.png'
+
+export const caseStudy = {
+  client: 'UX Architect @ Binary Defense',
+  title: 'Feature: Reporting Export Options and Dashboard Customization',
+  description:
+    'In recent studies, report generation was a recurring theme expressed by IT leaders to build custom dashboards and export large sets of data.',
+  summary: [
+    'In recent studies, report generation was a recurring theme expressed by IT leaders to build custom dashboards and export large sets of data.',
+    'In phase three of the BD Platform development, our product roadmap included a feature to allow customers to build their down custom dashboards and export custom sets of data so they could create their own reports.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2024-11',
+  service: 'Product Design, UX Research',
+  testimonial: {
+    author: { name: 'Christina', role: 'Director of Portfolio Management at Binary Defense' },
+    content:
+      'Watching the UI prototype come to life has been wonderful to see, and the structure, process, and detail that you put in place has been the catalyst for this.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Project Overview
+
+In phase three of our product roadmap, we planned to provide the ability for each customer to customize one or more screens modeled after the main dashboard. In usabilities studies and user interviews, it was a recurring theme that our customers were seeking capabilities to build dashboards for reporting to view specific metrics on Investigations, Alerts, and Service Requests. To some, exporting data was also very important as customers also expressed the need to export the raw data so they can create their own reports internally.
+
+<TagList>
+  <TagListItem>UI Design</TagListItem>
+  <TagListItem>UX Research</TagListItem>
+  <TagListItem>Usability Testing</TagListItem>
+  <TagListItem>Product Design</TagListItem>
+  <TagListItem>Information Architecture</TagListItem>
+  <TagListItem>Figma</TagListItem>
+  <TagListItem>QA Testing</TagListItem>
+</TagList>
+
+## The Challenge
+
+With a sprint in place, we had to search for solutions on how to develop an interface that could allow customers to create their own dashboards and export data to analyze on their own. Our first problem was creating an editable board that could allow customers to add and remove charts, move them around to their liking, and publish them. Here, we researched metrics and information that were most important to our customers and built a chart library of available charts they could access.
+
+The other challenge was finding a solution to allow customers to export very large sets of data in an organized format. Here, we would need to allow customers to select data fields to group, filter, and sort. Exporting would be a user choice of the data in the table as configured, or all data. Another capability we realized was the ability to save views so they could be accessed at another time. With all of this to anticpate, we spent a lot of time creating usable concepts to solve these complex problems.
+
+## Solutions & Goals
+
+After understanding these complexities we began testing solutions. First, we built a proof-of-concept of a React grid layout that would allow users to drag and resize charts. After requirements gathering, we created lists of data fields we need for Investigations and Alerts, sourced from our SOAR or ticking platform. Once we had these in place, I began designing concepts for editable dashboards and custom exporting. We chose to separate these into three pages; one page to house the dashboards, one page to list Investigation data set, and another to list Alert data set. Primary goals to keep in mind were:
+
+- The ability to export all data for Investigations and Alerts (separately) from dashboards or data view.
+- Building a chart library that provides value to a multidude of different customers.
+- Creating an easy-to-use report builder that customers can name, customize, or even share with others in their organization.
+- With exporting, focusing on custom grouping and filtering of data will provide customers to create their own view or usa data for their own charts.
+- (Future) Scheduling reports to run at intervals could save customer time from needing to build weekly or monthly reports.
+
+<Image
+  src={imageShowcase}
+  alt="some description"
+  className="xl:!min-w-[76rem] !w-full mt-10 xl:!mt-20 !mb-40"
+/>
+
+## Building Dashboard Reports 
+
+When we finished gathering requirements on reporting, the first part focused on building dashboards. For each customizable dashboard, a customer will select charts, lists, and other "widgets" from a pre-defined list, or library based on their subscriptions. Here, customers can arrange any combination of these on the screen in any order they choose. Then, they can save that configuration, and access it via the reporting tab in the main navigation. As we take it further, the dashboards can be exported to a PDF file on demand, and emailed to the customer on a set schedule. They can also choose to receive the graphic seen in the dashboard, and/or the data behind the graphic in a common format like CSV so they can implement their own visualization.
+
+<Image
+  src={imageFeature1}
+  alt="some description"
+  className="xl:!min-w-[76rem] !w-full mt-10 xl:!mt-20"
+/>
+
+<div className="lg:!w-full xl:!min-w-[76rem] xl:!columns-2 lg:!columns-1 sm:!columns-1 gap-10 xs:!mt-0 xl:!mt-10 !mb-40">
+  <Image className="!w-full mt-10 xl:mt-0" src={imageFeature1a}/>
+  <Image className="!w-full mt-10 xl:mt-0" src={imageFeature1b}/>
+</div>
+
+## Exporting Data for Analysis
+
+The second part of our requirements gathering centered around exporting data. As mentioned earlier, exporting data is very important for internal and external customers. When they talked about exporting data for a chart, they expect the entire list of objects which the chart represents, not just the datapoints in the chart. For example, when looking at a chart of alerts by source, they would expect the exported data to be a list of alerts, including title, source, secerity, created date, and ideally data like endpoint fqdns, account name, and other direct data. The predominant use cases here are:
+
+- Drill into the data to find what's happening - what is common, is there an apparent progression of event, etc?
+- Custom grouping and filtering of the data, as in pivot tables, to create their own view or use as data for their own charts to yse for their internal reporting.
+
+<Image
+  src={imageFeature2}
+  alt="some description"
+  className="xl:!min-w-[76rem] !w-full mt-10 xl:!mt-20"
+/>
+
+<div className="lg:!w-full xl:!min-w-[76rem] xl:!columns-2 lg:!columns-1 sm:!columns-1 gap-10 xs:!mt-0 xl:!mt-10 !mb-40">
+  <Image className="!w-full mt-10 xl:mt-0" src={imageFeature2a}/>
+  <Image className="!w-full mt-10 xl:mt-0" src={imageFeature2b}/>
+</div>
+
+## Outcomes and Impacts
+Today, we are currently in the building phase of the reporting feature, a long awaited future release for a lot of our customers. We plan to release reporting in early 2025 after testing has been done and if inital rollout goes smoothly. Currrently we have POC's of rendering charts, printing to PDF, drag and drop grid, chart configuration, and API structure.
+
+Similarly to the alerts feature, we don't have statisical results yet, we will measure success by product usage tracking and by data exploration, meaning as we progress, the more data we will need to be available in reporting. As we release Reporting, we have plans to increase the amount of data points into customers' security environment, which will give them more availability of raw data. By allowing customers to build dashboard AND export data, this will cover our main personas who need to report on their company's security posture.

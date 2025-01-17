@@ -1,0 +1,118 @@
+import logo from '@/images/clients/binary-defense/logomark-dark.svg'
+import imageHero from './hero.png'
+import Image from 'next/image'
+import imageFeature1 from './feature-1.png'
+import imageShowcase from './showcase.png'
+import imageFeature2 from './feature-2.png'
+import imageFeature2a from './feature-2a.png'
+import imageFeature2b from './feature-2b.png'
+import imageFeature3 from './feature-3.png'
+import imageFeature3a from './feature-3a.png'
+import imageFeature3b from './feature-3b.png'
+
+export const caseStudy = {
+  client: 'UX Architect @ Binary Defense',
+  title: 'Building a Ticketing System for a Managed Detection & Response Platform',
+  description:
+    'User research found that users were struggling to effectively respond to security incidents because the third-party ticket system we were using did not fit well in their workflow.',
+  summary: [
+    'User research found that users were struggling to effectively respond to security incidents because the third-party ticket system we were using did not fit well in their workflow.',
+    'We decided to pursue an integrated ticketing experience where users could work an incident in-platform.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2023-11',
+  service: 'Product Design, UX Research',
+  testimonial: {
+    author: { name: 'Jax', role: 'UX Researcher at Binary Defense' },
+    content:
+      'One of the great things about Max is how proactive he is beyond his day-to-day. He collaborated on projects in other departments, and was always researching ways we could improve our small-but-mighty UX function.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Project Overview
+
+Binary Defense is a managed security service provider that specializes in managed detection and response solutions. While in my role as UX Architect at Binary Defense, we have been building a platform that will become our customers' primary touchpoint for their Managed Detection and Response serivce. With a quick go-to-market strategy, the platform was expected to reach general audience in Q2 2024. To make this happen, the BD Platform scope was reduced to a MVP version with a focus on the investigation (ticketing) feature.
+
+<TagList>
+  <TagListItem>UI Design</TagListItem>
+  <TagListItem>UX Research</TagListItem>
+  <TagListItem>Usability Testing</TagListItem>
+  <TagListItem>Product Design</TagListItem>
+  <TagListItem>Product Strategy</TagListItem>
+  <TagListItem>Information Architecture</TagListItem>
+  <TagListItem>Figma</TagListItem>
+  <TagListItem>Adobe Xd</TagListItem>
+  <TagListItem>QA Testing</TagListItem>
+</TagList>
+
+## The Challenge
+
+In exploratory research, it was found that customers had frustrations with using an external ticketing system which caused more steps than necessary to escalate and manage their tickets. Furthermore, customers using the current MDR platform (BD Vision) have a separate system into which they login, but it does not link to the ticketing system. Both of these scenarios are unacceptable because we do not own the third-party ticketing system and cannot control the user experience. Our primary user, security analyst, wants to be able to respond to escalated alerts within the same system in which they are notified of escalation.
+
+## Solutions & Goals
+
+While in the planning phase of the BD Platform and using initial research, I built quick workflows using my comprehensive design system and reviewed it internally with team members and leaderhip. Here, we understood our challenges, roadblocks, and problems to be solved. We compiled a large amount of user feedback and built out personas according to the type of users that will use our new platform. It was felt that our findings were important and should be addressed with efforts including:
+
+- Providing customers with valuable metrics that they can access when they want and customize as they need.
+- Creating a unified ticket workflow experience that supports key use cases.
+- Allow internal access to manage and onboard accounts and their users.
+- Reducing overall cognitive load and improving workflow.
+- Capturing requirements for a intial release with a quick quick go-to-market strategy, while providing enough value.
+
+<Image
+  src={imageShowcase}
+  alt="some description"
+  className="xl:!min-w-[76rem] !w-full !mt-20 !mb-40"
+/>
+
+## Providing Valuable Metrics
+
+During a few research studies, I interviewed our SOC Analysts and SOC Leadership to understand the most crucial metrics that need to be available to our customers. Along with a few customer interviews, we compiled a list of metrics we can display on the dashboard as well as on the other feature pages. Our goal for these metrics is to give our customers insights into their environment and be able to understand where they need to take action.
+
+<Image
+  src={imageFeature1}
+  alt="some description"
+  className="xl:!min-w-[76rem] !w-full !mt-20 !mb-40"
+/>
+
+## Unified Ticketing Workflow
+
+As mentioned earlier, instead of using a third-party ticketing system, we integrated our own into the platform, pulling in data through api's. After understanding the SOC workflow, integrations, and limits, I designed a in-depth workflow of the ticketing feature. Our goal for this feature is to allow customers to respond directly to tickets, change statuses, follow the timeline of events, and access the escalated alert information linking to the sourced alert information on BD Vision.
+
+<Image
+  src={imageFeature2}
+  alt="some description"
+  className="xl:!min-w-[76rem] !w-full !mt-20"
+/>
+
+<div className="lg:!w-full xl:!min-w-[76rem] xl:!columns-2 lg:!columns-1 sm:!columns-1 gap-10 xs:!mt-0 xl:!mt-10 !mb-40">
+  <Image className="!w-full mt-10 xl:mt-0" src={imageFeature2a}/>
+  <Image className="!w-full mt-10 xl:mt-0" src={imageFeature2b}/>
+</div>
+
+
+## Internal Account Management
+
+In order to manage accounts and their users, we needed to think about a few internal processes. First, we need to be able to onboard tenants to the platform and manage the users on their behalf. We created a System Admin persona that ideally will perform these actions. After a few passes and a fully interactive prototype, I performed a usability study with a few key IT Admins. We found out that, overall, the feature was easy to use and provided positive feedback about the workflow. There were a few things that posed to be problematic that we addressed and implemented into the final version.
+
+<Image
+  src={imageFeature3}
+  alt="some description"
+  className="xl:!min-w-[76rem] !w-full !mt-20"
+/>
+
+<div className="lg:!w-full xl:!min-w-[76rem] xl:!columns-2 lg:!columns-1 sm:!columns-1 gap-10 xs:!mt-0 xl:!mt-10 !mb-40">
+  <Image className="!w-full mt-10 xl:mt-0" src={imageFeature3a}/>
+  <Image className="!w-full mt-10 xl:mt-0" src={imageFeature3b}/>
+</div>
+
+## Outcomes and Impacts
+Today, we contine to build upon BD Platform's features and developed a product roadmap to address the needs and wants of our customers through countless interviews, feature feedback, and quarterly business reviews. After months of building, testing, and QA, we launched the initial version of the BD Platform in Q2 of 2024. The platform was well receieved by our leadership as well as countless customers who onboarded as soon as they heard. 
+
+Later in 2024, Binary Defense was invited to participate in the Forrester Wave™ demo to be judged against the competition. In short, the Forrester Wave™ is a guide for buyers considering their purchasing options in a technology marketplace and is based on their analysis and opinion. In this report, it was stated that Binary Defense is "punching above our weight" and that we scored high in many categories about our offerings.
